@@ -1,0 +1,45 @@
+.container{
+    margin-top: 50px;
+}
+.card{
+    margin: auto;
+}
+/* start custom radio button */
+.btn-group label
+{
+  padding-left: 40px;
+}
+
+input[type="radio"]:empty
+{
+  display: none;
+}
+
+input[type="radio"] ~ span:before
+{
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+}
+
+input[type="radio"]:before
+{
+  content: "\2714";
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+input[type="radio"]:checked ~ span:before
+{
+  content: "\2714";
+  text-indent: .3em;
+  color: #fff;
+  background-color: #5cb85c;
+  line-height: 2.5em;
+}
+/* end custom radio button didapat dari : https://bootsnipp.com/snippets/RE0MB */
